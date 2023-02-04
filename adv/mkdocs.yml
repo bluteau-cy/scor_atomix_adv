@@ -1,0 +1,16 @@
+site_name: ATOMIX point-velocities
+site_author: Cynthia Bluteau
+
+#repo_url: https://bitbucket.org/cynthiabluteau/cynthiabluteau.bitbucket.io/
+#edit_uri: src/master/mainTools/docs/
+
+theme: flatly
+
+nav:
+- Home: index.md
+- Best Practices: 
+     - bp/section01.md #creates submenus
+     - bp/section02.md #creates submenus
+- Benchmarks: Benchmark.md
+#- Concepts: 
+- Contact: Contact.md
