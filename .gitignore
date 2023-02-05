@@ -2,4 +2,7 @@
 *.m~
 *.asv
 Icon*
+*.rls*
+*.sync
 build*
+
