@@ -1,3 +1,6 @@
+---
+comments: true
+---
 title: Section 2
 
 # MathJax Test Page

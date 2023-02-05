@@ -5,7 +5,8 @@ repo_url: https://github.com/bluteau-cy/scor_atomix_adv/
 edit_uri: tree/main/adv/docs
 
 #theme: flatly
-theme: material
+theme: 
+    name: material
 
 plugins:
   - search
