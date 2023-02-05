@@ -8,6 +8,8 @@ edit_uri: tree/main/adv/docs
 theme: 
     name: material
     custom_dir: overrides
+    feature:
+      - navigation.footer
 
 plugins:
   - search
