@@ -1,0 +1,47 @@
+site_name: ATOMIX point-velocities
+site_author: Cynthia Bluteau
+
+repo_url: https://github.com/bluteau-cy/scor_atomix_adv/
+edit_uri: tree/main/adv/docs
+
+#theme: flatly
+theme: 
+    name: material
+    custom_dir: docs/overrides
+    feature:
+      - navigation.footer
+
+plugins:
+  - search
+  - bibtex:
+      bib_file: mwe.bib
+      bib_by_default: true
+#       csl_file: "frontiers.csl"
+#       cite_inline: true
+      
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - extras/js/utterance_sb.js
+  
+markdown_extensions:
+  - footnotes
+  - toc
+  - mdx_math:
+     #enable_dollar_delimiter: 1
+ 
+extra:
+  comments:
+    enabled: true
+    # defaults to utterances unless replaced mode: giscus
+    mode: utterances
+    type: issues 
+  
+  ## Page tree=====================
+nav:
+- Home: index.md
+- Best Practices: 
+     - bp/section01.md #creates submenus
+     - bp/section02.md #creates submenus
+- Benchmarks: Benchmark.md
+#- Concepts: 
+- Contact: Contact.md

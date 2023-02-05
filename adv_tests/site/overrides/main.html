@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+  <!-- Add scripts that need to run before here -->
+  <title>Lorem ipsum dolor sit amet</title>
+    <script src="https://utteranc.es/client.js"
+        repo="https://github.com/bluteau-cy/scor_atomix_adv"
+        issue-term="title"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+  {{ super() }}
+  <!-- Add scripts that need to run afterwards here -->
+  <script src="https://utteranc.es/client.js"
+        repo="https://github.com/bluteau-cy/scor_atomix_adv"
+        issue-term="title"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+{% endblock %}

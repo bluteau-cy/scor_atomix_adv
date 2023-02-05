@@ -1,41 +1,89 @@
+# Project information
+
+site_url: https://bluteau-cy.github.io/scor_atomix_adv/adv/site/
 site_name: ATOMIX point-velocities
 site_author: Cynthia Bluteau
 
+
+# Repository
 repo_url: https://github.com/bluteau-cy/scor_atomix_adv/
 edit_uri: tree/main/adv/docs
 
-#theme: flatly
-theme: 
-    name: material
-    custom_dir: overrides
-    feature:
-      - navigation.footer
 
+# Copyright
+# copyright: >-
+#   <a href="/disclosure/">Disclosure</a>
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  #logo: assets/images/fixed/sitelogo.png
+
+  # 404 page
+ #  static_templates:
+#     - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.top
+    - navigation.indexes
+    - navigation.sections
+ 
+
+
+# Plugins
 plugins:
   - search
-  - bibtex:
-      bib_file: mwe.bib
-      bib_by_default: true
-#       csl_file: "frontiers.csl"
-#       cite_inline: true
-      
+
+
+## Customization
+extra_css:
+ # - assets/css/extra.css
+
 extra_javascript:
+ # - 'assets/js/extra.js'
+  - 'assets/js/mathjax.js'
+  - 'https://polyfill.io/v3/polyfill.min.js?features=es6'
+  - 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js'
+  - 'assets/js/tables.js'
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-  - extras/js/utterance_sb.js
-  
-markdown_extensions:
-  - footnotes
-  - toc
-  - mdx_math:
-     #enable_dollar_delimiter: 1
- 
+
 extra:
+  disqus: ''
+  repo:
+    url: https://github.com/bluteau-cy/scor_atomix_adv/
+    tree: /tree/main
+    blob: /blob/main
   comments:
     enabled: true
     # defaults to utterances unless replaced mode: giscus
     mode: utterances
-    type: issues 
-  
+    type: issues
+
+# Extensions
+markdown_extensions:
+ # - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - mdx_math:
+
+
+# Page tree
   ## Page tree=====================
 nav:
 - Home: index.md
@@ -45,3 +93,5 @@ nav:
 - Benchmarks: Benchmark.md
 #- Concepts: 
 - Contact: Contact.md
+
+#_end_

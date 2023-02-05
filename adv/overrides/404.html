@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang=en>
+<head>
+	<title>404 - Not found</title>
+</head>
+<body>
+  	<h1>404 - Not found</h1>
+
+	<script>
+	function my404path() {
+	    var x = location.pathname;
+	    document.getElementById("my404key").innerHTML = x;
+	}
+	window.onload=my404path;
+	</script>
+
+	<p>Sorry! The page you are looking for, <code><span id="my404key"></span></code> does not exist on this website.</p>
+
+	<a href="{{ config.site_url }}">Homepage</a>
+</body>
+</html>
