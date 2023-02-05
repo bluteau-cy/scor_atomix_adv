@@ -1,7 +1,7 @@
 ---
-bibliography: mwe.bib 
-biblio-style: frontiers.csl 
+bibliography: "mwe.bib"
 csl: frontiers.csl 
+biblio-style: frontiers.csl 
 ---
 
 # Citation tests
